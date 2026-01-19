@@ -1,5 +1,5 @@
-github.com/agentplexus/omnivault v0.2.0 h1:2Irg07HT4vg2TekocJoUfjyekUdtKcQm/alNEnUngRk=
-github.com/agentplexus/omnivault v0.2.0/go.mod h1:r+sr3yTymLn/sU/BjcXtrKouEuKpHOl21G0q254h04o=
+github.com/agentplexus/omnivault v0.2.1 h1:7Inras4SbRrQIEguDvvr0SKc11pvBOmWKKuGUdcdXeg=
+github.com/agentplexus/omnivault v0.2.1/go.mod h1:zS5AsNGKNuRRMyA4vSJZXmV1F4lOhAGeZD50kKOpLlk=
 github.com/aws/aws-sdk-go-v2 v1.41.1 h1:ABlyEARCDLN034NhxlRUSZr4l71mh+T5KAeGh6cerhU=
 github.com/aws/aws-sdk-go-v2 v1.41.1/go.mod h1:MayyLB8y+buD9hZqkCW3kX1AKq07Y5pXxtgB+rRFhz0=
 github.com/aws/aws-sdk-go-v2/config v1.32.7 h1:vxUyWGUwmkQ2g19n7JY/9YL8MfAIl7bTesIUykECXmY=

@@ -1,9 +1,9 @@
 module github.com/agentplexus/omnivault-aws
 
-go 1.24.0
+go 1.25.5
 
 require (
-	github.com/agentplexus/omnivault v0.2.0
+	github.com/agentplexus/omnivault v0.2.2
 	github.com/aws/aws-sdk-go-v2 v1.41.2
 	github.com/aws/aws-sdk-go-v2/config v1.32.10
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.41.2

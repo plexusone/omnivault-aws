@@ -1,9 +1,9 @@
 package aws
 
 import (
-	"github.com/agentplexus/omnivault-aws/parameterstore"
-	"github.com/agentplexus/omnivault-aws/secretsmanager"
-	"github.com/agentplexus/omnivault/vault"
+	"github.com/plexusone/omnivault-aws/parameterstore"
+	"github.com/plexusone/omnivault-aws/secretsmanager"
+	"github.com/plexusone/omnivault/vault"
 )
 
 // NewSecretsManager creates a new AWS Secrets Manager provider.

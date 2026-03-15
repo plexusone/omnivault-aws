@@ -7,11 +7,11 @@ import (
 	"log"
 	"os"
 
-	"github.com/agentplexus/omnivault"
-	"github.com/agentplexus/omnivault/vault"
+	"github.com/plexusone/omnivault"
+	"github.com/plexusone/omnivault/vault"
 
-	aws "github.com/agentplexus/omnivault-aws"
-	"github.com/agentplexus/omnivault-aws/secretsmanager"
+	aws "github.com/plexusone/omnivault-aws"
+	"github.com/plexusone/omnivault-aws/secretsmanager"
 )
 
 func main() {

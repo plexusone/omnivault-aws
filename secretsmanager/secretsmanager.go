@@ -27,11 +27,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/agentplexus/omnivault/vault"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/secretsmanager"
 	"github.com/aws/aws-sdk-go-v2/service/secretsmanager/types"
+	"github.com/plexusone/omnivault/vault"
 )
 
 // Config holds configuration for the Secrets Manager provider.

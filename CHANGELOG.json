@@ -1,0 +1,59 @@
+{
+  "irVersion": "1.0",
+  "project": "omnivault-aws",
+  "repository": "https://github.com/plexusone/omnivault-aws",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "releases": [
+    {
+      "version": "v0.2.0",
+      "date": "2026-03-14",
+      "highlights": [
+        { "description": "Module renamed from `github.com/agentplexus/omnivault-aws` to `github.com/plexusone/omnivault-aws`" }
+      ],
+      "breaking": [
+        { "description": "Module path changed from `github.com/agentplexus/omnivault-aws` to `github.com/plexusone/omnivault-aws`" }
+      ],
+      "upgradeGuide": [
+        { "description": "Update import paths from `github.com/agentplexus/omnivault-aws` to `github.com/plexusone/omnivault-aws`" },
+        { "description": "Update `go.mod` dependency from `github.com/agentplexus/omnivault-aws` to `github.com/plexusone/omnivault-aws`" }
+      ],
+      "changed": [
+        { "description": "Dependency `github.com/agentplexus/omnivault` renamed to `github.com/plexusone/omnivault` and updated to v0.3.0" }
+      ],
+      "dependencies": [
+        { "description": "Update `github.com/plexusone/omnivault` to v0.3.0 (renamed from `github.com/agentplexus/omnivault`)" },
+        { "description": "Update `github.com/aws/aws-sdk-go-v2/config` to v1.32.12", "commit": "36043ff" },
+        { "description": "Update `github.com/aws/aws-sdk-go-v2/service/secretsmanager` to v1.41.4", "commit": "48859d3" },
+        { "description": "Update `github.com/aws/aws-sdk-go-v2/service/ssm` to v1.68.3", "commit": "1a478be" },
+        { "description": "Update `go.mod` dependencies", "commit": "c7f45f9" }
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "date": "2025-12-27",
+      "highlights": [
+        { "description": "Initial release of OmniVault AWS provider with support for AWS Secrets Manager and Parameter Store" }
+      ],
+      "added": [
+        { "description": "AWS Secrets Manager provider implementing `vault.Vault` and `vault.ExtendedVault` interfaces", "commit": "1856934" },
+        { "description": "AWS Parameter Store provider implementing `vault.Vault` interface", "commit": "1856934" },
+        { "description": "Convenience functions `NewSecretsManager()` and `NewParameterStore()` for quick setup", "commit": "1856934" },
+        { "description": "Support for custom AWS config, region, profile, and endpoint URL", "commit": "1856934" },
+        { "description": "JSON parsing for Secrets Manager secrets with field extraction", "commit": "1856934" },
+        { "description": "Version staging labels support for Secrets Manager", "commit": "1856934" },
+        { "description": "Path prefix support for Parameter Store namespacing", "commit": "1856934" },
+        { "description": "Secret rotation trigger for Secrets Manager", "commit": "1856934" },
+        { "description": "Version history retrieval for both providers", "commit": "1856934" },
+        { "description": "Example usage demonstrating direct provider usage and OmniVault client integration", "commit": "1856934" }
+      ],
+      "fixed": [
+        { "description": "Deadlock in `secretsmanager.Provider.Rotate()` method", "commit": "1e5056e" },
+        { "description": "Type conversions in provider implementations", "commit": "1e5056e" }
+      ],
+      "documentation": [
+        { "description": "Clean up duplicate shields in README.md", "commit": "f56202d" }
+      ]
+    }
+  ]
+}

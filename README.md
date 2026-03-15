@@ -25,21 +25,21 @@
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-url]: https://github.com/plexusone/omnivault-aws/blob/master/LICENSE
 
-AWS secret storage providers for [OmniVault](https://github.com/agentplexus/omnivault). Supports AWS Secrets Manager and AWS Systems Manager Parameter Store.
+AWS secret storage providers for [OmniVault](https://github.com/plexusone/omnivault). Supports AWS Secrets Manager and AWS Systems Manager Parameter Store.
 
 ## Features
 
-- **AWS Secrets Manager** (`aws-sm`): Designed for credentials, API keys, and rotating secrets
-- **AWS Parameter Store** (`aws-ssm`): Designed for configuration and hierarchical parameters
-- **IRSA Support**: Automatic authentication on EKS with IAM Roles for Service Accounts
-- **Multi-Field Secrets**: JSON parsing for complex secrets with username, password, etc.
-- **Versioning**: Access specific versions of secrets
-- **Secret Rotation**: Trigger rotation for Secrets Manager secrets
+- 🔐 **AWS Secrets Manager** (`aws-sm`): Designed for credentials, API keys, and rotating secrets
+- ⚙️ **AWS Parameter Store** (`aws-ssm`): Designed for configuration and hierarchical parameters
+- 🔑 **IRSA Support**: Automatic authentication on EKS with IAM Roles for Service Accounts
+- 📦 **Multi-Field Secrets**: JSON parsing for complex secrets with username, password, etc.
+- 📜 **Versioning**: Access specific versions of secrets
+- 🔄 **Secret Rotation**: Trigger rotation for Secrets Manager secrets
 
 ## Installation
 
 ```bash
-go get github.com/agentplexus/omnivault-aws
+go get github.com/plexusone/omnivault-aws
 ```
 
 ## Quick Start
@@ -54,7 +54,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/agentplexus/omnivault-aws"
+    "github.com/plexusone/omnivault-aws"
 )
 
 func main() {
@@ -89,7 +89,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/agentplexus/omnivault-aws"
+    "github.com/plexusone/omnivault-aws"
 )
 
 func main() {
@@ -184,9 +184,9 @@ import (
     "context"
     "os"
 
-    "github.com/agentplexus/omnivault"
-    "github.com/agentplexus/omnivault-aws"
-    "github.com/agentplexus/omnivault-keyring"
+    "github.com/plexusone/omnivault"
+    "github.com/plexusone/omnivault-aws"
+    "github.com/plexusone/omnivault-keyring"
 )
 
 func NewResolver(ctx context.Context) (*omnivault.Resolver, error) {
@@ -250,7 +250,7 @@ type Config struct {
 ### Secrets Manager Config
 
 ```go
-import "github.com/agentplexus/omnivault-aws/secretsmanager"
+import "github.com/plexusone/omnivault-aws/secretsmanager"
 
 provider, err := secretsmanager.New(secretsmanager.Config{
     Region:       "us-east-1",
@@ -263,7 +263,7 @@ provider, err := secretsmanager.New(secretsmanager.Config{
 ### Parameter Store Config
 
 ```go
-import "github.com/agentplexus/omnivault-aws/parameterstore"
+import "github.com/plexusone/omnivault-aws/parameterstore"
 
 provider, err := parameterstore.New(parameterstore.Config{
     Region:         "us-east-1",
@@ -319,7 +319,7 @@ for _, name := range secrets {
 ### Version Management
 
 ```go
-import "github.com/agentplexus/omnivault-aws/secretsmanager"
+import "github.com/plexusone/omnivault-aws/secretsmanager"
 
 provider, _ := secretsmanager.New(config)
 
@@ -336,7 +336,7 @@ secret, _ := provider.GetVersion(ctx, "my-secret", "abc123-version-id")
 ### Secret Rotation
 
 ```go
-import "github.com/agentplexus/omnivault-aws/secretsmanager"
+import "github.com/plexusone/omnivault-aws/secretsmanager"
 
 provider, _ := secretsmanager.New(config)
 
@@ -352,8 +352,8 @@ fmt.Println("New secret value:", newSecret.Value)
 
 ```go
 import (
-    "github.com/agentplexus/omnivault"
-    "github.com/agentplexus/omnivault-aws"
+    "github.com/plexusone/omnivault"
+    "github.com/plexusone/omnivault-aws"
 )
 
 provider, _ := aws.NewSecretsManager(aws.Config{Region: "us-east-1"})
@@ -482,7 +482,7 @@ For SecureString parameters, add KMS access:
 ```go
 import (
     "errors"
-    "github.com/agentplexus/omnivault/vault"
+    "github.com/plexusone/omnivault/vault"
 )
 
 secret, err := provider.Get(ctx, "my-secret")
@@ -507,8 +507,8 @@ if err != nil {
 
 ## Related Projects
 
-- [OmniVault](https://github.com/agentplexus/omnivault) - Core library
-- [OmniVault Keyring](https://github.com/agentplexus/omnivault-keyring) - OS credential stores
+- [OmniVault](https://github.com/plexusone/omnivault) - Core library
+- [OmniVault Keyring](https://github.com/plexusone/omnivault-keyring) - OS credential stores
 - [AWS SDK for Go v2](https://github.com/aws/aws-sdk-go-v2) - Underlying AWS SDK
 
 ## License

@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.41.5
 	github.com/aws/aws-sdk-go-v2/config v1.32.12
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.41.5
-	github.com/aws/aws-sdk-go-v2/service/ssm v1.68.3
+	github.com/aws/aws-sdk-go-v2/service/ssm v1.68.4
 	github.com/plexusone/omnivault v0.3.0
 )
 
